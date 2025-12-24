@@ -21,6 +21,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
+          git config --global --add safe.directory "*"
           composer2 install --dev --prefer-dist --no-scripts --no-progress --optimize-autoloader --no-interaction -vvv
           composer2 show
         shell: bash

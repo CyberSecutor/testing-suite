@@ -24,6 +24,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Commit Message validator to validate the commit message adheres to the 
   [Conventional Commit Message structure](https://cheatography.com/albelop/cheat-sheets/conventional-commits/)
   and that the commit message contains a Jira ticket number it relates to.
+- Prevent installation of `phpro/grumphp-shim:2.18.0` to prevent error "symfony/cache" conflicts with extension `redis`
+  , see [github link](https://github.com/phpro/grumphp-shim/issues/30) 
 
 ### Changed
 - [BREAKING] The composer.json configurations `config.youwe-testing-suite.type` and `config.mediact-testing-suite.type`
@@ -52,6 +54,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Default Pimcore coding standards disables PHPCS in favour of PHP CS Fixer.
 - JSON Lint will ignore folders `.ddev/` and `tests/fixtures/`.
 - Added Symfony function `dump()` to the git blacklist for all project types
+- Added new excludes to magento 2 phpcs rules.
 
 ### Removed
 - Removed support for EOL PHP versions. Projects running PHP < 8.1 can stick to version 2 of the testing-suite.
