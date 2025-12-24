@@ -5,5 +5,15 @@
     <!-- Use default Youwe coding standards for PHP projects. -->
     <rule ref="../default" />
     <!-- Magento coding standards -->
-    <rule ref="Magento2" />
+    <rule ref="Magento2" >
+        <!-- Not all functions require doc blocks -->
+        <exclude name="Magento2.Annotation.MethodAnnotationStructure.NoCommentBlock"/>
+        <!-- Not all class properties require doc blocks -->
+        <exclude name="Magento2.Commenting.ClassPropertyPHPDocFormatting.Missing"/>
+        <!--
+        This conflicts with PSR12.ControlStructures.ControlStructureSpacing.FirstExpressionLine
+        Which is used when a line is too long.
+        -->
+        <exclude name="PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace"/>
+    </rule>
 </ruleset>
