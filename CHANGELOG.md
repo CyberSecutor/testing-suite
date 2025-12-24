@@ -24,6 +24,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Commit Message validator to validate the commit message adheres to the 
   [Conventional Commit Message structure](https://cheatography.com/albelop/cheat-sheets/conventional-commits/)
   and that the commit message contains a Jira ticket number it relates to.
+- Prevent installation of `phpro/grumphp-shim:2.18.0` to prevent error "symfony/cache" conflicts with extension `redis`
+  , see [github link](https://github.com/phpro/grumphp-shim/issues/30) 
 
 ### Changed
 - [BREAKING] The composer.json configurations `config.youwe-testing-suite.type` and `config.mediact-testing-suite.type`
