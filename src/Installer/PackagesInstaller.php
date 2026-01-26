@@ -47,7 +47,7 @@ class PackagesInstaller implements InstallerInterface
                 'updateDependencies' => true,
             ],
             'bitexpert/phpstan-magento' => [
-                'version' => '~0.30',
+                'version' => '>=0.30.1 <0.33.0',
                 'updateDependencies' => true,
             ],
             'magento/magento-coding-standard' => [
