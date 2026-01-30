@@ -18,11 +18,6 @@
         <exclude name="BooleanArgumentFlag"/>
     </rule>
 
-    <rule ref="rulesets/codesize.xml">
-        <!-- Number of parameters often exceed 10 due to the dependency injection system -->
-        <exclude name="ExcessiveParameterList" />
-    </rule>
-
     <rule ref="rulesets/design.xml" />
     <rule ref="rulesets/unusedcode.xml">
         <!-- In Magento unused parameters are common, for example in plugins, $subject is required, but often not used. -->
@@ -52,13 +47,10 @@
     <!-- End of global ruleset -->
 
     <!-- Increase maximum amount of coupling, because Magento constructor injection can become quite extreme and is mostly an adobe issue to fix -->
-    <rule ref="rulesets/design.xml">
-        <exclude name="CouplingBetweenObjects"/>
-    </rule>
-
     <rule ref="rulesets/design.xml/CouplingBetweenObjects">
         <properties>
             <property name="maximum" value="20"/>
         </properties>
     </rule>
+
 </ruleset>
