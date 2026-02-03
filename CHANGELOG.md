@@ -10,9 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Added exclude patterns for *.phtml
   - Added exclude for UnusedFormalParameter to allow unused parameters in a function
   - Added exception for short variable name for $id
- Magento phpcs.xml loosened some rules to be more inline with what is 'normal' in Magento.
-  - Excluded Magento2.Annotation.MethodAnnotationStructure.MethodAnnotation
-  - Moved exclude paths for: *.phtml, ./app/etc/config.php, ddev/*, ./env-dev.php, ./tests/* to default ruleset.
+ - PHPCS Excluded Magento2.Annotation.MethodAnnotationStructure.MethodAnnotation
 ### Fixed
 - Updated property for LongVariable did not work.
 

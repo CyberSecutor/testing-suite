@@ -4,7 +4,7 @@
 
     <exclude-pattern>*.phtml</exclude-pattern>
     <exclude-pattern>./app/etc/config.php</exclude-pattern>
-    <exclude-pattern>.ddev/*</exclude-pattern>
+    <exclude-pattern>/.ddev/*</exclude-pattern>
     <exclude-pattern>./env-dev.php</exclude-pattern>
     <exclude-pattern>./tests/*</exclude-pattern>
 
